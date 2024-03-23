@@ -1,0 +1,35 @@
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte do corpo do documento */
+    background-color: transparent; /* Define a cor de fundo do corpo como transparente */
+}
+
+.botoes-servico {
+    display: flex; /* Utiliza Flexbox para alinhar os elementos filhos */
+    justify-content: center; /* Centraliza os elementos filhos horizontalmente */
+    gap: 15px; /* Define um espaço entre cada elemento filho */
+    margin: 0; /* Remove a margem ao redor do container dos botões */
+}
+
+.botao {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; /* Define uma pilha de fontes para compatibilidade */
+    background-color: #000000; /* Define a cor de fundo dos botões como preto */
+    color: #ffffff; /* Define a cor do texto dos botões como branco */
+    border: 1px solid #c92e1a; /* Define a cor das bordas dos botões como vermelho */
+    display: inline-flex; /* Aplica Flexbox aos botões para alinhar o texto/icones dentro */
+    justify-content: center; /* Centraliza o conteúdo dos botões horizontalmente */
+    align-items: center; /* Centraliza o conteúdo dos botões verticalmente */
+    white-space: nowrap; /* Evita que o conteúdo dos botões quebre em mais de uma linha */
+    margin: 1px; /* Define uma pequena margem ao redor dos botões */
+    overflow: hidden; /* Esconde o conteúdo que exceda os limites dos botões */
+    transition-duration: 200ms; /* Define a duração da transição de estilos ao passar o mouse */
+    transition-property: color, background-color, border-color; /* Especifica as propriedades que terão transição */
+    text-decoration: none; /* Remove a decoração do texto (como sublinhado para links) */
+    padding: 10px 20px; /* Define o preenchimento interno dos botões */
+    border-radius: 5px;  /* Define bordas arredondadas para os botões */
+}
+
+.botao:hover {
+    background-color: #c92e1a; /* Muda a cor de fundo para vermelho quando o mouse está sobre o botão */
+    color: #000000; /* Muda a cor do texto para preto quando o mouse está sobre o botão */
+    border-color: #ffffff; /* Muda a cor da borda para branco quando o mouse está sobre o botão */
+}
