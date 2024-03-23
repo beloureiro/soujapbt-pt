@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Botões de Serviço</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<div class="botoes-servico">
+    <!-- Botões -->
+    <a href="https://4menu.today/souljap" class="botao servico-culinaria">Culinária</a>
+    <a href="https://4menu.today/souljap/drinks" class="botao servico-bebida">Bebidas</a>
+</div>
+
+<script>
+    window.onload = function() {
+        var links = document.querySelectorAll('a');
+        links.forEach(function(link) {
+            // Aqui você garante que todos os links, exceto 'tel:', sejam abertos no contexto pai.
+            if (!link.href.startsWith('tel:')) {
+                link.target = "_parent";
+            }
+        });
+    };
+</script>
+
+</body>
+</html>
